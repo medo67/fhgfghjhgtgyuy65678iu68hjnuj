@@ -615,6 +615,8 @@ if (message.content.startsWith("$avatar")) {
 message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 }
 });
+var prefix = "$"
+var adminprefix = '$'
 
 client.on('ready',  () => {
     console.log('تم تشغيل :Broadcast  ');
