@@ -1,4 +1,4 @@
-cconst Discord = require("discord.js");
+const Discord = require("discord.js");
 const LOka = new Discord.Client();
 console.log('By KBOOOOOOOOSH-YT');
 LOka.on('ready', () => {
