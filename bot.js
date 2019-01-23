@@ -574,7 +574,7 @@ client.on('guildMemberAdd', member => {
     var channel =member.guild.channels.find('name', '፨─chat')///اسم الشات
     if (!channel) return;
     channel.send({embed : embed});
-    })
+    });
 
 
 client.on('ready', () => {///ده كود الستريمنق
@@ -586,7 +586,7 @@ client.on('ready', () => {///ده كود الستريمنق
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`Razers Comunity💖 `,"http://twitch.tv/S-F")/// هنا تقضر تغير بدلا من %help | By hassan_games
 client.user.setStatus("dnd")
-
+});
  
 
 
