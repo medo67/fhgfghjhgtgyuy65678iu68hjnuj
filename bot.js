@@ -476,6 +476,4 @@ LOka.on('guildMemberAdd', member => {
     
 
 
-
-
 client.login(process.env.BOT_TOKEN);
