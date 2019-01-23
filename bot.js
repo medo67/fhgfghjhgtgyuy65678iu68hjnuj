@@ -577,7 +577,15 @@ client.on('guildMemberAdd', member => {
     })
 
 
-
+client.on('ready', () => {///ده كود الستريمنق
+   console.log(`----------------`);
+      console.log(`Razer Bot- Script By : Jack`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Razers Comunity💖 `,"http://twitch.tv/S-F")/// هنا تقضر تغير بدلا من %help | By hassan_games
+client.user.setStatus("dnd")
 
  
 
