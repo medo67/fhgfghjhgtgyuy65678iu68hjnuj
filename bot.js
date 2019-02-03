@@ -21,7 +21,7 @@ client.on('ready', () => {
 /////////////////////////////////////////////اوامر عامه
 
 client.on('message' , message => {/// ده كود الهيلب
-if(message.content === '%help') {// دي الكلمه البيكتبها
+if(message.content === '$help') {// دي الكلمه البيكتبها
   var EsTeKnAN = new Discord.RichEmbed()
   .setColor('RANDOM')/// وتحت الرساله البتجيه تقضر تعدل الرساله براحتك
 message.author.send(`
