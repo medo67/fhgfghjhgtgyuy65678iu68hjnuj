@@ -66,7 +66,7 @@ client.on('message', message => {
 
 
 client.on('message', function(msg) {////ده كود معلومات السيرفر
-    const prefix = '%'
+    const prefix = '$'
     if(msg.content.startsWith (prefix  + 'server')) {////دي الرساله البيكتبها
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
@@ -89,7 +89,7 @@ client.on('message', function(msg) {////ده كود معلومات السيرف�
 
 
 client.on("message", message => {
-    const prefix = "%"////البرفيكس
+    const prefix = "$"////البرفيكس
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
@@ -308,7 +308,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
                                   //// كود قفل الشات وفت الشات
-    if (message.content === "%قفل") {
+    if (message.content === "$قفل") {
                         if(!message.channel.guild) return message.reply(' هذا الامر فقط للسيرفرات !!');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' ليس لديك صلاحيات');
@@ -319,7 +319,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' لي
                message.reply("تم تقفيل الشات ✅ ")
            });
              }
-if (message.content === "%فتح") {
+if (message.content === "$فتح") {
     if(!message.channel.guild) return message.reply(' هذا الامر فقط للسيرفرات !!');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
@@ -406,7 +406,7 @@ client.on("message", message => {
     
     let command = message.content.split(" ")[0];
                                    //// ده فك الميوت
-    if (command === "%تكلم") {
+    if (command === "$تكلم") {
           if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
     let user = message.mentions.users.first();
     let modlog = client.channels.find('name', 'log');
